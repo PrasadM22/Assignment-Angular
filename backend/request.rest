@@ -1,0 +1,32 @@
+POST http://localhost:2345/create
+Content-Type: application/json
+
+{
+    "DeptNo" : "3",
+    "DeptName" : "Digital Service",
+    "DeptId" : "DS",
+    
+}
+
+###
+PUT  http://localhost:2345/update/621adde455446a6723c4f6a1
+Content-Type: application/json
+
+{
+    "DeptNo" : "1",
+    "DeptName" : "Digital Service",
+    "DeptId" : "DS",
+    "DeptCategory" : "Testing"
+}
+
+###
+DELETE   http://localhost:2345/delete/621adde455446a6723c4f6a1
+Content-Type: application/json
+
+###
+GET   http://localhost:2345/readAllData
+Content-Type: application/json
+
+###
+get http://localhost:2345/readData/6273a136e06429e46ec87136
+Content-Type: application/json
