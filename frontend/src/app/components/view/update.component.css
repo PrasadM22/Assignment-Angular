@@ -1,0 +1,13 @@
+form{
+    height: 300px;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 100px;
+    display: flow-root;
+    background-color: skyblue;
+    padding: 2ch;
+    padding-bottom: 250px;
+}
+div{
+    margin-top: 10px;
+  }

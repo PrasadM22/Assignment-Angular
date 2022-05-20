@@ -1,0 +1,45 @@
+<form [formGroup]="userData" >
+    <div class="col">
+        <div class="col">
+            <label for="exampleInputEmail1">Dept.No</label>
+            <input type="text" 
+                 class="form-control" 
+                 placeholder="Department Number"
+                 formControlName="DeptNo"
+                 >  
+        </div>
+        <div class="col">
+            <label for="exampleInputEmail1">Department Name</label>
+            <input type="text"
+                 class="form-control"
+                 placeholder="Department Name"
+                 formControlName="DeptName"
+                 >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Department ID</label>
+        <input  type="email"
+                class="form-control"
+                placeholder="Department ID"
+                formControlName="DeptId"
+             >
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Department Category</label>
+        <input  type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Department Category"
+                formControlName="DeptCategory"
+             >
+    </div>
+    <div>
+        <button type="submit" 
+                class="btn btn-success"
+                (click)="onSubmit()"
+                >Save</button>
+    </div>
+        
+  </form>
+  

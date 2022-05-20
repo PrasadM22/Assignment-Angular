@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link bg-light" routerLink="/Add">Create Department</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link bg-light" routerLink="/list" >List Department</a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" 
+            class="btn btn-link px-3 me-2"
+            (click)="onSubmit()"
+            >
+      LogOut
+    </button>
+</nav>
+<router-outlet></router-outlet>

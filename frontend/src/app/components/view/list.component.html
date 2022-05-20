@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Department No</th>
+            <th>Department Name</th>
+            <th>Department ID</th>
+            <th>Department Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let arr of dataSource" >
+          <td>{{arr.DepartmentNo}}</td>
+          <td>{{arr.DepartmentName}}</td>
+          <td>{{arr.DepartmentId}}</td>
+          <td>{{arr.DepartmentCategory}}</td>
+          <button type="button" class="btn btn-outline-danger" (click)="onClickDelete(arr._id)">Delete</button>
+          <button type="button" class="btn btn-outline-warning" (click)="onClickEdit(arr)">Edit</button>
+         </tr> 
+    </tbody>
+    <button type="Back" 
+            class="btn btn-secondary"
+            (click)="onClickBack()"
+            >Back</button>
+</table>
+

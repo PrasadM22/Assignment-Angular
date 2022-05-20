@@ -1,0 +1,14 @@
+form{
+    height: 300px;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 100px;
+    display: flow-root;
+    background-color: cornflowerblue;
+    background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    padding: 2ch;
+    padding-bottom: 250px;
+}
+div{
+    margin-top: 10px;
+  }
