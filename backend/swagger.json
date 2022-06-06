@@ -1,0 +1,88 @@
+{
+    "swagger": "2.0",
+    "info": {
+       "version": "1.0.0",
+       "title": "Test Api",
+       "termsOfService": "http://swagger.io/terms/",
+       "contact": {
+          "email": "apiteam@swagger.io"
+       },
+       "license": {
+          "name": "Apache 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+       }
+    },
+    "schemes": [
+       "http"
+    ],
+    "paths":
+    {
+            "/readAllData": {
+               "get": {
+                  "tags": [
+                     "user"
+                  ],
+                  "description": "Read All User Data",
+                  "produces": [
+                     "application/json"
+                  ],
+                  "responses": {
+                     "200": {
+                        "description": "successful operation"
+                     }
+                  }
+               }
+         },
+            "/register": {
+               "post": {
+                  "tags": [
+                     "user"
+                  ],
+                  "summary": "Create user",
+                  "description": "This can only be done by the logged in user.",
+                  "operationId": "createUser",
+                  "produces": [
+                     "application/json"
+                  ],
+                  "parameters": [
+                     {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Created user object",
+                        "required": true,
+                        "schema": {
+                           "$ref": "#/definitions/NewUser"
+                        }
+                     }
+                  ],
+                  "responses": {
+                     "default": {
+                        "description": "successful operation"
+                     }
+                  }
+               }
+         }
+    },
+    "definitions": {
+        "NewUser": {
+            "type": "object",
+            "properties": {
+               "firstName": {
+                  "type": "string"
+               },
+               "lastName": {
+                  "type": "string"
+               },
+               "userName": {
+                  "type": "string"
+               },
+               "password": {
+                  "type": "string"
+               }
+            },
+            "xml": {
+               "name": "User"
+            }
+         }
+     }
+ }
